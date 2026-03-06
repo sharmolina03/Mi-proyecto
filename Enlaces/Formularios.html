@@ -24,7 +24,7 @@
             <option value="otro">Otro</option>
         </select> <br><br>
 
-        <label for="intereses">Intereses: <br>
+        < for="intereses">Intereses: <br>
             <input type="checkbox" id="intereses1" name="intereses" value="deportes">
             <label for="deportes">Deportes</label> <br>
             <input type="checkbox" id="intereses2" name="intereses" value="musica">
@@ -41,6 +41,46 @@
         <textarea name="Comentarios" id="Comentarios"></textarea> <br>
         <label for="Archivo">Subir archivo</label> <br>
         <input type="file"  id="Archivo" value="Seleccionar archivo"> <br><br>
+
+        <label for="email2">Email:</label>
+        <input type="email" name="email2" id="email2" placeholder="Introduce tu email" required> <br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="123 456 789" pattern="[0-9]{9}" required> <br><br>
+        <label for="web">Página web:</label>
+        <input type="url" name="web" id="web" placeholder="https://www.ejemplo.com" required> <br><br>
+        <label for="cantidad">Cantidad (1-10):</label>
+        <input type="number" name="cantidad" id="cantidad" min="1" max="10" required> <br><br>
+        <label for="rango">Rango (0-100):</label>
+        <input type="range" name="rango" id="rango" min="0" max="100" step="20"> <br><br>
+
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" name="fecha" id="fecha" required>
+        <label for="hora">Hora:</label>
+        <input type="time" name="hora" id="hora" required> <br><br>
+        <label for="cita">Cita:</label>
+        <input type="datetime-local" name="cita" id="cita" required><br><br>
+        <label for="semana">Semana del año:</label>
+        <input type="week" name="semana" id="semana" required> <br><br>
+        <label for="mes">Mes:</label>
+        <input type="month" name="mes" id="mes" required> <br><br>
+        
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color" value="#ff0000"> <br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" id="contraseña" required> <br><br>
+        <label for="buscar">Buscar:</label>
+        <input type="search" name="buscar" id="buscar" placeholder="Buscar..."> <br><br>
+        <input type="hidden" id="Usuario" name="usuarioID" value="12345"><br><br>
+
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" required> <br><br>
+        <label for="codigo postal">Código postal:</label>
+        <input type="text" id="codigo postal" name="codigo postal" pattern="[0-9]{5}" placeholder="00000"> <br><br>
+
+        <label for="progreso">Progreso:</label>
+        <progress id="progreso" value="25" max="100">25%</progress> <br><br>
+        
         <input type="reset"  value="Limpiar">
         <input type="submit" value="Enviar">
         
